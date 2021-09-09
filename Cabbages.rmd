@@ -55,7 +55,15 @@ Now we can see that the mean amount of vitamin c produced by c39 is 51.5, and th
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
-
+```{r}
+t.test(VitC~Cult,data=veggy)
+```
+  
+According to this data, our p-value is 0.00000003405. This means that if the null hypothesis were true, we would have a 0.00000003405 probability of achieving these results. This p-value is exceedingly low, meaning that we can reject the null hypothesis.   
+  
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+  
+The first step we took is understanding what kind of problem we were dealing with so we could know which helper file we would need. We compared two cultivation methods, which was our categorical variables, by how much vitamin c they produced respectively, which was our numerical variable. This meant that we would need to use the Numerical~Categorical helper file. We uploaded the file and then moved on to the graphical descriptive results. We placed out data on a box plot using the function boxplot(). Next, we imported a favstats function to view the exact means of how much vitamin c was produced by c39 and c52, respectively. Lastly, we used a t-test to calculate the p-value. The p-value was extremely low, which meant that we could reject the null hypothesis.   
+  
